@@ -1,4 +1,14 @@
 
+***Запуск проекта***
+устанавливаем все зависимости командой: npm i 
+запускаем проект командой: gulp 
+
+возможно потребуется установить gulp глобально: npm install --global gulp
+
+
+
+
+
 Junior frontend-developer test job
 
 Макет https://www.figma.com/file/kIuVw6nSk218pi9iE98iq5/Junior-frontend-developer-test?node-id=4%3A365

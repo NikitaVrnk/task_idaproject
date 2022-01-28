@@ -9,107 +9,62 @@
 </head>
 
   <body>
-    <header class="header">
-  <!-- <img src="images/i-am.jpg" alt=""> -->
-</header>
+    <main class="main container">
 
-    <main class="main">
-      <h1>Интернет магазин</h1>
+      <div class="main-header">
+        <h3 class="main-title">Добавление товара</h3>
+
+        <select class="sort" name="" id="sort">
+          <option class='option' value="default">по умолчанию</option>
+          <option value="max">по возрастанию</option>
+          <option value="min">по убыванию</option>
+      </select>
+      </div>
+
+
       <div class="main-wrapper">
         <aside class="aside">
           <form action="#">
-            <label for="name" class="label-title">
-              Наименование товара <span class="text-red">*</span>
-            </label>
-            <input
-              class="input-name-product"
-              type="text"
-              id="name"
-              placeholder="Введите наименование товара"
-              required
-            />
-            <label class="label-title">Описание товара</label>
-            <textarea
-              name=""
-              id=""
-              class="textarea-description-product"
-              placeholder="Введите описание товара"
-            ></textarea>
-            <label class="label-title">Ссылка на изображение товара <span class="text-red">*</span></label>
-            <input
-            class="input-url-img-product"
-            type="text"
-            id="name"
-            placeholder="Введите наименование товара"
-            required
-          />
-          <label class="label-title">Цена товара<span class="text-red">*</span></label>
-          <input
-          class="input-url-img-product"
-          type="text"
-          id="name"
-          placeholder="Введите цену"
-          required
-        />
-        <button class="button-add">Добавить товар</button>
+
+            <label for="product_name" class="label-title">Наименование товара <span class="text_red">*</span></label>
+            <input id="product_name" class="input input-name" type="text" placeholder="Введите наименование товара" required/>
+
+            <label for="product_description" class="label-title">Описание товара</label>
+            <textarea id="product_description" class="textarea-description" placeholder="Введите описание товара"></textarea>
+            
+            <label for='product_url' class="label-title">Ссылка на изображение товара<span class="text-red">*</span></label>
+            <input id="product_url" class="input input-url" type="text"  placeholder="Введите ссылку" value="https://proprikol.ru/wp-content/uploads/2020/08/kartinki-lamborgini-lamborghini-10.jpg" required/>
+            
+            <label for='product_price' class="label-title">Цена товара<span class="text-red">*</span></label>
+            <input id="product_price"  class="input input-price"  type="number" pattern="\s[0-9]" required/>
+            <!-- <input id="product_price"  class="input input-price"  type="number" pattern='/(\d)(?=(\d\d\d)+([^\d]|$))/g, "$1 "'required/> -->
+
+
+            <button id="btn_add" class="button-add" type="submit">Добавить товар</button>
+
           </form>
         </aside>
 
         <section class="product-items">
-          <div class="item">
-            <img src="/images/product.png" alt="" class="item-img" />
-            <h3 class="item-title">Наименование товара</h3>
-            <p class="item-subtitle">
-              Довольно-таки интересное описание товара в несколько строк.
-              Довольно-таки интересное описание товара в несколько строк
-            </p>
-            <p class="item-price">10 000</p>
-          </div>
 
           <div class="item">
+
+            <button class="item-delete">
+              <img  src="/images/icons-delete.png" alt="">
+            </button>
+            
             <img src="/images/product.png" alt="" class="item-img" />
-            <h3 class="item-title">Наименование товара</h3>
+            <h3 class="item-title">я не такой как все</h3>
             <p class="item-subtitle">
-              Довольно-таки интересное описание товара в несколько строк.
-              Довольно-таки интересное описание товара в несколько строк
+              Меня оствили в верстке =(
             </p>
-            <p class="item-price">10 000</p>
+            <p class="item-price">777</p>
           </div>
-          <div class="item">
-            <img src="/images/product.png" alt="" class="item-img" />
-            <h3 class="item-title">Наименование товара</h3>
-            <p class="item-subtitle">
-              Довольно-таки интересное описание товара в несколько строк.
-              Довольно-таки интересное описание товара в несколько строк
-            </p>
-            <p class="item-price">10 000</p>
-          </div>
-          <div class="item">
-            <img src="/images/product.png" alt="" class="item-img" />
-            <h3 class="item-title">Наименование товара</h3>
-            <p class="item-subtitle">
-              Довольно-таки интересное описание товара в несколько строк.
-              Довольно-таки интересное описание товара в несколько строк
-            </p>
-            <p class="item-price">10 000</p>
-          </div>
-          <div class="item">
-            <img src="/images/product.png" alt="" class="item-img" />
-            <h3 class="item-title">Наименование товара</h3>
-            <p class="item-subtitle">
-              Довольно-таки интересное описание товара в несколько строк.
-              Довольно-таки интересное описание товара в несколько строк
-            </p>
-            <p class="item-price">10 000</p>
-          </div>
+
         </section>
       </div>
+
     </main>
-
-    <footer class="footer">
-
-</footer>
-
     <script src="js/app.min.js"></script>
   </body>
 </html>
